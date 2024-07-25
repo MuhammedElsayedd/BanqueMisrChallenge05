@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		379263DE2C52BD3000371329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263DD2C52BD3000371329 /* AppDelegate.swift */; };
+		379263E02C52BD3000371329 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263DF2C52BD3000371329 /* SceneDelegate.swift */; };
+		379263E22C52BD3000371329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263E12C52BD3000371329 /* ViewController.swift */; };
+		379263E52C52BD3000371329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379263E32C52BD3000371329 /* Main.storyboard */; };
+		379263E72C52BD3100371329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379263E62C52BD3100371329 /* Assets.xcassets */; };
+		379263EA2C52BD3100371329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379263E82C52BD3100371329 /* LaunchScreen.storyboard */; };
+		379263F52C52BD3100371329 /* BanqueMisrChallenge05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263F42C52BD3100371329 /* BanqueMisrChallenge05Tests.swift */; };
+		379263FF2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */; };
+		379264012C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		379263F12C52BD3100371329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379263D22C52BD2F00371329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379263D92C52BD2F00371329;
+			remoteInfo = BanqueMisrChallenge05;
+		};
+		379263FB2C52BD3100371329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379263D22C52BD2F00371329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379263D92C52BD2F00371329;
+			remoteInfo = BanqueMisrChallenge05;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		379263DA2C52BD2F00371329 /* BanqueMisrChallenge05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanqueMisrChallenge05.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		379263DD2C52BD3000371329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		379263DF2C52BD3000371329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		379263E12C52BD3000371329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		379263E42C52BD3000371329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		379263E62C52BD3100371329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		379263E92C52BD3100371329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		379263EB2C52BD3100371329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379263F02C52BD3100371329 /* BanqueMisrChallenge05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanqueMisrChallenge05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379263F42C52BD3100371329 /* BanqueMisrChallenge05Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisrChallenge05Tests.swift; sourceTree = "<group>"; };
+		379263FA2C52BD3100371329 /* BanqueMisrChallenge05UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanqueMisrChallenge05UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisrChallenge05UITests.swift; sourceTree = "<group>"; };
+		379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisrChallenge05UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		379263D72C52BD2F00371329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263ED2C52BD3100371329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263F72C52BD3100371329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		379263D12C52BD2F00371329 = {
+			isa = PBXGroup;
+			children = (
+				379263DC2C52BD2F00371329 /* BanqueMisrChallenge05 */,
+				379263F32C52BD3100371329 /* BanqueMisrChallenge05Tests */,
+				379263FD2C52BD3100371329 /* BanqueMisrChallenge05UITests */,
+				379263DB2C52BD2F00371329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		379263DB2C52BD2F00371329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				379263DA2C52BD2F00371329 /* BanqueMisrChallenge05.app */,
+				379263F02C52BD3100371329 /* BanqueMisrChallenge05Tests.xctest */,
+				379263FA2C52BD3100371329 /* BanqueMisrChallenge05UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		379263DC2C52BD2F00371329 /* BanqueMisrChallenge05 */ = {
+			isa = PBXGroup;
+			children = (
+				379263DD2C52BD3000371329 /* AppDelegate.swift */,
+				379263DF2C52BD3000371329 /* SceneDelegate.swift */,
+				379263E12C52BD3000371329 /* ViewController.swift */,
+				379263E32C52BD3000371329 /* Main.storyboard */,
+				379263E62C52BD3100371329 /* Assets.xcassets */,
+				379263E82C52BD3100371329 /* LaunchScreen.storyboard */,
+				379263EB2C52BD3100371329 /* Info.plist */,
+			);
+			path = BanqueMisrChallenge05;
+			sourceTree = "<group>";
+		};
+		379263F32C52BD3100371329 /* BanqueMisrChallenge05Tests */ = {
+			isa = PBXGroup;
+			children = (
+				379263F42C52BD3100371329 /* BanqueMisrChallenge05Tests.swift */,
+			);
+			path = BanqueMisrChallenge05Tests;
+			sourceTree = "<group>";
+		};
+		379263FD2C52BD3100371329 /* BanqueMisrChallenge05UITests */ = {
+			isa = PBXGroup;
+			children = (
+				379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */,
+				379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */,
+			);
+			path = BanqueMisrChallenge05UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		379263D92C52BD2F00371329 /* BanqueMisrChallenge05 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379264042C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05" */;
+			buildPhases = (
+				379263D62C52BD2F00371329 /* Sources */,
+				379263D72C52BD2F00371329 /* Frameworks */,
+				379263D82C52BD2F00371329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanqueMisrChallenge05;
+			productName = BanqueMisrChallenge05;
+			productReference = 379263DA2C52BD2F00371329 /* BanqueMisrChallenge05.app */;
+			productType = "com.apple.product-type.application";
+		};
+		379263EF2C52BD3100371329 /* BanqueMisrChallenge05Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379264072C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05Tests" */;
+			buildPhases = (
+				379263EC2C52BD3100371329 /* Sources */,
+				379263ED2C52BD3100371329 /* Frameworks */,
+				379263EE2C52BD3100371329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379263F22C52BD3100371329 /* PBXTargetDependency */,
+			);
+			name = BanqueMisrChallenge05Tests;
+			productName = BanqueMisrChallenge05Tests;
+			productReference = 379263F02C52BD3100371329 /* BanqueMisrChallenge05Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		379263F92C52BD3100371329 /* BanqueMisrChallenge05UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3792640A2C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05UITests" */;
+			buildPhases = (
+				379263F62C52BD3100371329 /* Sources */,
+				379263F72C52BD3100371329 /* Frameworks */,
+				379263F82C52BD3100371329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379263FC2C52BD3100371329 /* PBXTargetDependency */,
+			);
+			name = BanqueMisrChallenge05UITests;
+			productName = BanqueMisrChallenge05UITests;
+			productReference = 379263FA2C52BD3100371329 /* BanqueMisrChallenge05UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		379263D22C52BD2F00371329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					379263D92C52BD2F00371329 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					379263EF2C52BD3100371329 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 379263D92C52BD2F00371329;
+					};
+					379263F92C52BD3100371329 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 379263D92C52BD2F00371329;
+					};
+				};
+			};
+			buildConfigurationList = 379263D52C52BD2F00371329 /* Build configuration list for PBXProject "BanqueMisrChallenge05" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 379263D12C52BD2F00371329;
+			productRefGroup = 379263DB2C52BD2F00371329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				379263D92C52BD2F00371329 /* BanqueMisrChallenge05 */,
+				379263EF2C52BD3100371329 /* BanqueMisrChallenge05Tests */,
+				379263F92C52BD3100371329 /* BanqueMisrChallenge05UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		379263D82C52BD2F00371329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379263EA2C52BD3100371329 /* LaunchScreen.storyboard in Resources */,
+				379263E72C52BD3100371329 /* Assets.xcassets in Resources */,
+				379263E52C52BD3000371329 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263EE2C52BD3100371329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263F82C52BD3100371329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		379263D62C52BD2F00371329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379263E22C52BD3000371329 /* ViewController.swift in Sources */,
+				379263DE2C52BD3000371329 /* AppDelegate.swift in Sources */,
+				379263E02C52BD3000371329 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263EC2C52BD3100371329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379263F52C52BD3100371329 /* BanqueMisrChallenge05Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379263F62C52BD3100371329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379264012C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift in Sources */,
+				379263FF2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		379263F22C52BD3100371329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379263D92C52BD2F00371329 /* BanqueMisrChallenge05 */;
+			targetProxy = 379263F12C52BD3100371329 /* PBXContainerItemProxy */;
+		};
+		379263FC2C52BD3100371329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379263D92C52BD2F00371329 /* BanqueMisrChallenge05 */;
+			targetProxy = 379263FB2C52BD3100371329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		379263E32C52BD3000371329 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379263E42C52BD3000371329 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		379263E82C52BD3100371329 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379263E92C52BD3100371329 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		379264022C52BD3100371329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		379264032C52BD3100371329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		379264052C52BD3100371329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BanqueMisrChallenge05/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		379264062C52BD3100371329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BanqueMisrChallenge05/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		379264082C52BD3100371329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BanqueMisrChallenge05.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BanqueMisrChallenge05";
+			};
+			name = Debug;
+		};
+		379264092C52BD3100371329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BanqueMisrChallenge05.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BanqueMisrChallenge05";
+			};
+			name = Release;
+		};
+		3792640B2C52BD3100371329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BanqueMisrChallenge05;
+			};
+			name = Debug;
+		};
+		3792640C2C52BD3100371329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JC64A35TT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BanqueMisrChallenge05;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		379263D52C52BD2F00371329 /* Build configuration list for PBXProject "BanqueMisrChallenge05" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379264022C52BD3100371329 /* Debug */,
+				379264032C52BD3100371329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379264042C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379264052C52BD3100371329 /* Debug */,
+				379264062C52BD3100371329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379264072C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379264082C52BD3100371329 /* Debug */,
+				379264092C52BD3100371329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3792640A2C52BD3100371329 /* Build configuration list for PBXNativeTarget "BanqueMisrChallenge05UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3792640B2C52BD3100371329 /* Debug */,
+				3792640C2C52BD3100371329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 379263D22C52BD2F00371329 /* Project object */;
+}
