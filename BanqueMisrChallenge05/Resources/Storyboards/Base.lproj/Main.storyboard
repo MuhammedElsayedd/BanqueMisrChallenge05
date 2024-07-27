@@ -39,7 +39,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRW-kW-wcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.5419847328244" y="879.57746478873241"/>
+            <point key="canvasLocation" x="363" y="1625"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="ERQ-6B-ZbU">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" id="oOd-la-Ie8" customClass="MovieDetailsViewController" customModule="BanqueMisrChallenge05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="maR-N1-gXf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBr-uO-Frq" customClass="MovieDetailsView" customModule="BanqueMisrChallenge05" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6fi-mb-mzN"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fi-mb-mzN" firstAttribute="bottom" secondItem="QBr-uO-Frq" secondAttribute="bottom" id="EWn-1n-Foy"/>
+                            <constraint firstItem="6fi-mb-mzN" firstAttribute="trailing" secondItem="QBr-uO-Frq" secondAttribute="trailing" id="KKc-uk-o3K"/>
+                            <constraint firstItem="QBr-uO-Frq" firstAttribute="top" secondItem="6fi-mb-mzN" secondAttribute="top" id="ZBe-MG-DsR"/>
+                            <constraint firstItem="QBr-uO-Frq" firstAttribute="leading" secondItem="6fi-mb-mzN" secondAttribute="leading" id="uik-kv-1u4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieDetailsView" destination="QBr-uO-Frq" id="gai-vO-KVR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27D-GE-K4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3199" y="1292"/>
         </scene>
         <!--Popular-->
         <scene sceneID="wSG-XH-zmu">
@@ -73,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eS-ax-cgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834.3511450381679" y="879.57746478873241"/>
+            <point key="canvasLocation" x="1308" y="1625"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="XR9-AG-IwC">
@@ -107,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXw-UA-0Vg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657.2519083969464" y="876.76056338028172"/>
+            <point key="canvasLocation" x="2259" y="1625"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="l47-Dh-j97">
@@ -126,7 +156,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCB-Vw-V5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="153"/>
+            <point key="canvasLocation" x="1308" y="145"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="sMM-Oa-HeT">
@@ -145,7 +175,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bL0-Ui-DeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.824427480916029" y="879.57746478873241"/>
+            <point key="canvasLocation" x="363" y="891"/>
         </scene>
         <!--Popular-->
         <scene sceneID="6n6-W3-q1q">
@@ -164,7 +194,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKd-c3-nRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1907.6335877862596" y="879.57746478873241"/>
+            <point key="canvasLocation" x="1308" y="891"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="vEB-2W-8J0">
@@ -183,7 +213,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T11-oF-run" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3730.5343511450378" y="876.76056338028172"/>
+            <point key="canvasLocation" x="2260" y="891"/>
         </scene>
     </scenes>
 </document>

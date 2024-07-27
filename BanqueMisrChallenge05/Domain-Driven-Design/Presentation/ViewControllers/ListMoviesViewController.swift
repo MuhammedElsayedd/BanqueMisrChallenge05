@@ -14,26 +14,44 @@ enum MovieCategory: String {
 }
 
 class ListMoviesViewController: UIViewController {
+    //MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: Variables
     var category: MovieCategory = .nowPlaying {
         didSet {
             viewModel?.category = category
         }
     }
-    
     private var viewModel: ListMoviesViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTableView()
-        
+        setupViewModel()
+        setupBindings()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchMovies()
+    }
+    
+    private func setupTableView() {
+        let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "MovieCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    private func setupViewModel() {
         let networkManager = NetworkManager.shared
         let movieRepository = MovieRepositoryImpl(networkManager: networkManager)
         
         viewModel = ListMoviesViewModel(movieRepository: movieRepository)
-        
+    }
+    
+    private func setupBindings() {
         viewModel.category = category
         
 
@@ -48,18 +66,6 @@ class ListMoviesViewController: UIViewController {
                 self?.showErrorAlert(message: error)
             }
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        fetchMovies()
-    }
-    
-    private func setupTableView() {
-        let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "MovieCell")
-        tableView.delegate = self
-        tableView.dataSource = self
     }
     
     func fetchMovies() {
@@ -87,12 +93,14 @@ extension ListMoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let movie = viewModel?.movies[indexPath.row] {
-            let vc = MovieDetailsViewController()
-            vc.movieId = movie.id
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
+           if let movie = viewModel?.movies[indexPath.row] {
+               let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               if let vc = storyboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController {
+                   vc.movieId = movie.id
+                   self.navigationController?.pushViewController(vc, animated: true)
+               }
+           }
+       }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85

@@ -9,8 +9,8 @@ import Foundation
 
 struct Movie: Decodable {
     let id: Int
-    let title: String
-    let releaseDate: String
+    let title: String?
+    let releaseDate: String?
     let posterPath: String?
     
     enum CodingKeys: String, CodingKey {

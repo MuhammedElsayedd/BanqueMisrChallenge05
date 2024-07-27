@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		371E20B02C55885100BD1A83 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371E20AF2C55885100BD1A83 /* MainTabBarController.swift */; };
 		371E20B52C55915C00BD1A83 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371E20B42C55915C00BD1A83 /* MovieRepository.swift */; };
+		371E20B72C559CB600BD1A83 /* MovieDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371E20B62C559CB600BD1A83 /* MovieDetailsRepository.swift */; };
 		379263DE2C52BD3000371329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263DD2C52BD3000371329 /* AppDelegate.swift */; };
 		379263E02C52BD3000371329 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263DF2C52BD3000371329 /* SceneDelegate.swift */; };
 		379263E52C52BD3000371329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379263E32C52BD3000371329 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		371E20AF2C55885100BD1A83 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		371E20B42C55915C00BD1A83 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		371E20B62C559CB600BD1A83 /* MovieDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRepository.swift; sourceTree = "<group>"; };
 		379263DA2C52BD2F00371329 /* BanqueMisrChallenge05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanqueMisrChallenge05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379263DD2C52BD3000371329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379263DF2C52BD3000371329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				371E20B42C55915C00BD1A83 /* MovieRepository.swift */,
+				371E20B62C559CB600BD1A83 /* MovieDetailsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				379264282C55206000371329 /* URL.swift in Sources */,
 				379264222C52D2DD00371329 /* Endpoint.swift in Sources */,
 				379263E02C52BD3000371329 /* SceneDelegate.swift in Sources */,
+				371E20B72C559CB600BD1A83 /* MovieDetailsRepository.swift in Sources */,
 				3792642A2C55207500371329 /* Movie.swift in Sources */,
 				379264442C5529AA00371329 /* MovieDetailsView.swift in Sources */,
 				371E20B02C55885100BD1A83 /* MainTabBarController.swift in Sources */,

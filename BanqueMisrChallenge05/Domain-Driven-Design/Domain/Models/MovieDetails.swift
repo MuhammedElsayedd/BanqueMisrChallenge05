@@ -9,16 +9,11 @@ import Foundation
 
 struct MovieDetails: Decodable {
     let id: Int
-    let title: String
-    let overview: String
-    let genres: [Genre]
-    let runtime: Int
+    let title: String?
+    let overview: String?
+    let genres: [Genre]?
+    let runtime: Int?
     let posterPath: String?
-    
-    struct Genre: Decodable {
-        let id: Int
-        let name: String
-    }
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -28,4 +23,8 @@ struct MovieDetails: Decodable {
         case runtime
         case posterPath = "poster_path"
     }
+}
+struct Genre: Decodable {
+    let id: Int
+    let name: String?
 }

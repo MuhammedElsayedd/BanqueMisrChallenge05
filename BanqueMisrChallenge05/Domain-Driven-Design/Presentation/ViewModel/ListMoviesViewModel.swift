@@ -14,7 +14,6 @@ class ListMoviesViewModel {
     var onMoviesFetched: (() -> Void)?
     var onError: ((String) -> Void)?
 
-    // Injecting the repository through initializer
     init(movieRepository: MovieRepository) {
         self.movieRepository = movieRepository
     }
