@@ -1,19 +1,19 @@
 //
-//  MovieRepository.swift
+//  MovieUseCase.swift
 //  BanqueMisrChallenge05
 //
-//  Created by Muhammed Elsayed on 27/07/2024.
+//  Created by Muhammed Elsayed on 28/07/2024.
 //
 
 import Foundation
 
-protocol MovieRepository {
+protocol MovieUseCase {
     func fetchNowPlayingMovies(completion: @escaping (Result<[Movie], Error>) -> Void)
     func fetchPopularMovies(completion: @escaping (Result<[Movie], Error>) -> Void)
     func fetchUpcomingMovies(completion: @escaping (Result<[Movie], Error>) -> Void)
 }
 
-class MovieRepositoryImpl: MovieRepository {
+class MovieUseCaseImpl: MovieUseCase {
     private let networkManager: NetworkManager
 
     init(networkManager: NetworkManager) {

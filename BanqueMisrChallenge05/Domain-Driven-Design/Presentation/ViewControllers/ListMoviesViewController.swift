@@ -46,15 +46,13 @@ class ListMoviesViewController: UIViewController {
     
     private func setupViewModel() {
         let networkManager = NetworkManager.shared
-        let movieRepository = MovieRepositoryImpl(networkManager: networkManager)
-        
-        viewModel = ListMoviesViewModel(movieRepository: movieRepository)
+        let movieUseCase = MovieUseCaseImpl(networkManager: networkManager)
+        viewModel = ListMoviesViewModel(movieUseCase: movieUseCase)
     }
     
     private func setupBindings() {
         viewModel.category = category
         
-
         viewModel.onMoviesFetched = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -93,14 +91,14 @@ extension ListMoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           if let movie = viewModel?.movies[indexPath.row] {
-               let storyboard = UIStoryboard(name: "Main", bundle: nil)
-               if let vc = storyboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController {
-                   vc.movieId = movie.id
-                   self.navigationController?.pushViewController(vc, animated: true)
-               }
-           }
-       }
+        if let movie = viewModel?.movies[indexPath.row] {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let vc = storyboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController {
+                vc.movieId = movie.id
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85

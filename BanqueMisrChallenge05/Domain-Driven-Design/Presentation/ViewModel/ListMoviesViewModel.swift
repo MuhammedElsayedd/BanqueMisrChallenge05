@@ -7,29 +7,29 @@
 import Foundation
 
 class ListMoviesViewModel {
-    private let movieRepository: MovieRepository
+    private let movieUseCase: MovieUseCase
     var movies: [Movie] = []
     var category: MovieCategory = .nowPlaying
     
     var onMoviesFetched: (() -> Void)?
     var onError: ((String) -> Void)?
 
-    init(movieRepository: MovieRepository) {
-        self.movieRepository = movieRepository
+    init(movieUseCase: MovieUseCase) {
+        self.movieUseCase = movieUseCase
     }
     
     func fetchMovies() {
         switch category {
         case .nowPlaying:
-            movieRepository.fetchNowPlayingMovies { [weak self] result in
+            movieUseCase.fetchNowPlayingMovies { [weak self] result in
                 self?.handleResult(result)
             }
         case .popular:
-            movieRepository.fetchPopularMovies { [weak self] result in
+            movieUseCase.fetchPopularMovies { [weak self] result in
                 self?.handleResult(result)
             }
         case .upcoming:
-            movieRepository.fetchUpcomingMovies { [weak self] result in
+            movieUseCase.fetchUpcomingMovies { [weak self] result in
                 self?.handleResult(result)
             }
         }
