@@ -8,24 +8,22 @@
 import Foundation
 
 class MovieDetailsViewModel {
-    private let repository: MovieDetailsRepository
-    private let movieId: Int
-    
+    private let movieDetailsUseCase: MovieDetailsUseCase
     var movieDetails: MovieDetails?
-    var onMovieDetailsFetched: ((MovieDetails) -> Void)?
+    
+    var onDetailsFetched: (() -> Void)?
     var onError: ((String) -> Void)?
-
-    init(movieId: Int, repository: MovieDetailsRepository) {
-        self.movieId = movieId
-        self.repository = repository
+    
+    init(movieDetailsUseCase: MovieDetailsUseCase) {
+        self.movieDetailsUseCase = movieDetailsUseCase
     }
-
-    func fetchMovieDetails() {
-        repository.fetchMovieDetails(movieId: movieId) { [weak self] result in
+    
+    func fetchMovieDetails(movieId: Int) {
+        movieDetailsUseCase.execute(movieId: movieId) { [weak self] result in
             switch result {
-            case .success(let movieDetails):
-                self?.movieDetails = movieDetails
-                self?.onMovieDetailsFetched?(movieDetails)
+            case .success(let details):
+                self?.movieDetails = details
+                self?.onDetailsFetched?()
             case .failure(let error):
                 self?.onError?(error.localizedDescription)
             }

@@ -17,19 +17,21 @@ class MovieDetailsViewController: UIViewController {
         super.viewDidLoad()
         setupViewModel()
         setupBindings()
-        viewModel.fetchMovieDetails()
+        fetchMovieDetails()
     }
     
     private func setupViewModel() {
         let networkManager = NetworkManager.shared
-        let movieDetailsRepository = MovieDetailsRepositoryImpl(networkManager: networkManager)
-        viewModel = MovieDetailsViewModel(movieId: movieId, repository: movieDetailsRepository)
+        let movieDetailsUseCase = MovieDetailsUseCaseImpl(networkManager: networkManager)
+        viewModel = MovieDetailsViewModel(movieDetailsUseCase: movieDetailsUseCase)
     }
 
     private func setupBindings() {
-        viewModel.onMovieDetailsFetched = { [weak self] movieDetails in
+        viewModel.onDetailsFetched = { [weak self] in
             DispatchQueue.main.async {
-                self?.movieDetailsView.configure(with: movieDetails)
+                if let details = self?.viewModel.movieDetails {
+                    self?.movieDetailsView.configure(with: details)
+                }
             }
         }
 
@@ -38,6 +40,10 @@ class MovieDetailsViewController: UIViewController {
                 self?.showErrorAlert(message: error)
             }
         }
+    }
+
+    private func fetchMovieDetails() {
+        viewModel.fetchMovieDetails(movieId: movieId)
     }
 
     private func showErrorAlert(message: String) {
