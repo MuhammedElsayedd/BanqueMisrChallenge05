@@ -19,8 +19,6 @@
 		379263E52C52BD3000371329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379263E32C52BD3000371329 /* Main.storyboard */; };
 		379263E72C52BD3100371329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379263E62C52BD3100371329 /* Assets.xcassets */; };
 		379263EA2C52BD3100371329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379263E82C52BD3100371329 /* LaunchScreen.storyboard */; };
-		379263FF2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */; };
-		379264012C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */; };
 		379264202C52D2CD00371329 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792641F2C52D2CD00371329 /* APIConfiguration.swift */; };
 		379264222C52D2DD00371329 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379264212C52D2DD00371329 /* Endpoint.swift */; };
 		379264242C52D33400371329 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379264232C52D33400371329 /* NetworkError.swift */; };
@@ -72,8 +70,6 @@
 		379263EB2C52BD3100371329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379263F02C52BD3100371329 /* BanqueMisrChallenge05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanqueMisrChallenge05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379263FA2C52BD3100371329 /* BanqueMisrChallenge05UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanqueMisrChallenge05UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisrChallenge05UITests.swift; sourceTree = "<group>"; };
-		379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanqueMisrChallenge05UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3792641F2C52D2CD00371329 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		379264212C52D2DD00371329 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		379264232C52D33400371329 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -167,7 +163,6 @@
 			children = (
 				379263DC2C52BD2F00371329 /* BanqueMisrChallenge05 */,
 				379263F32C52BD3100371329 /* BanqueMisrChallenge05Tests */,
-				379263FD2C52BD3100371329 /* BanqueMisrChallenge05UITests */,
 				379263DB2C52BD2F00371329 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,15 +198,6 @@
 				371E20C32C55AF0B00BD1A83 /* NetworkManagerMock.swift */,
 			);
 			path = BanqueMisrChallenge05Tests;
-			sourceTree = "<group>";
-		};
-		379263FD2C52BD3100371329 /* BanqueMisrChallenge05UITests */ = {
-			isa = PBXGroup;
-			children = (
-				379263FE2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift */,
-				379264002C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift */,
-			);
-			path = BanqueMisrChallenge05UITests;
 			sourceTree = "<group>";
 		};
 		3792640F2C52BD6600371329 /* Resources */ = {
@@ -476,8 +462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379264012C52BD3100371329 /* BanqueMisrChallenge05UITestsLaunchTests.swift in Sources */,
-				379263FF2C52BD3100371329 /* BanqueMisrChallenge05UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -682,7 +666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.BanqueMisrChallenge05.BanqueMisrChallenge05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
