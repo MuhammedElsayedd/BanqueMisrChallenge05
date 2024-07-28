@@ -23,3 +23,8 @@ The project is organized into three main layers:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/banquemisr.challenge05.git
+
+## Screenshots
+<img width="359" alt="upComing" src="https://github.com/user-attachments/assets/1e34e088-0e9d-442c-beb7-82c929ada8bd">
+<img width="362" alt="popular" src="https://github.com/user-attachments/assets/0cb63264-dbd8-4fe3-a955-c91d9f0b5439">
+<img width="357" alt="nowPlaying" src="https://github.com/user-attachments/assets/9a87a99a-3029-4527-b72b-91e42e3240fa">
