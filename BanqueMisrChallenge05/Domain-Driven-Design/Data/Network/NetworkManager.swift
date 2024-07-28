@@ -10,7 +10,7 @@ import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
     
-    private init() {}
+    public init() {}
     
     func fetchMovies(from endpoint: Endpoint, completion: @escaping (Result<[Movie], NetworkError>) -> Void) {
         guard let url = endpoint.url else {
