@@ -19,8 +19,9 @@ class NetworkManager {
         }
         
         let urlWithKey = url.appending("api_key", value: APIConfiguration.apiKey)
+        let request = URLRequest(url: urlWithKey, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 60)
         
-        URLSession.shared.dataTask(with: urlWithKey) { data, response, error in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
                 completion(.failure(.noData))
                 return
@@ -37,7 +38,8 @@ class NetworkManager {
             } catch {
                 completion(.failure(.decodingError))
             }
-        }.resume()
+        }
+        task.resume()
     }
     
     func fetchMovieDetails(for movieId: Int, completion: @escaping (Result<MovieDetails, NetworkError>) -> Void) {
@@ -48,8 +50,9 @@ class NetworkManager {
         }
         
         let urlWithKey = url.appending("api_key", value: APIConfiguration.apiKey)
+        let request = URLRequest(url: urlWithKey, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 60)
         
-        URLSession.shared.dataTask(with: urlWithKey) { data, response, error in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
                 completion(.failure(.noData))
                 return
@@ -66,6 +69,7 @@ class NetworkManager {
             } catch {
                 completion(.failure(.decodingError))
             }
-        }.resume()
+        }
+        task.resume()
     }
 }
